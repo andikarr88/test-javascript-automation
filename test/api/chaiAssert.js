@@ -7,7 +7,7 @@ describe('Post Request Example', () => {
     const response = request(baseUrl())
         .post('/user')
         .send(DATA.CREATE_USER_DATA)
-    
+    //test
     it('response status equal to 200', async () => {
         //check response status harus sama dengan 200
         expect((await response).status).to.equal(200)
